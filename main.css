@@ -17,7 +17,7 @@ section.show-animation .animate{
 }
 
 section{
-	min-height: 100vh;
+	height: auto;
 }
 
 body{
