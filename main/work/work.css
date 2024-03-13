@@ -351,7 +351,7 @@ section{
 
 /* --------------/design-styling/------------- */
 
-#design .basket{
+#photo .basket{
     height: 90vh;
     width: 100%;
     margin: 0;
@@ -455,7 +455,7 @@ section{
       
   }
 /* ---------------/photography styling/----------- */
-#photo {
+#design {
     .slider{
         overflow: hidden;
         position: relative;
@@ -540,6 +540,7 @@ section{
 }
 /* ---------------/viewer styling/---------- */
 .viewer{
+    display: none;
     position: fixed;
     top: 0;
     width: 100%;
