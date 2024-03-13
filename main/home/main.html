@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="description" content="Himmat Neupane, a passionate software engineering student, proficient in React.js, Node.js, HTML, CSS, and JavaScript. Explore his portfolio showcasing innovative projects and expertise in front-end and back-end development. Discover the creative solutions and skills he brings to the world of software engineering."/>
-    <meta name="keywords" content="Himmat Neupane, software engineering student, React.js, Node.js, HTML, CSS, JavaScript, portfolio"/>
-    <meta name="author" content="Himmat Neupane"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to my Portfolio !!!</title>
@@ -312,14 +309,14 @@ color: #ffffff;
   <div class="wbar ad1">
     <div class="layer" onclick="openAndroidSec(1)">
       <i class="fa-solid fa-up-right-from-square" ></i>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, omnis?  </p>
+      <p>A room booking app with database connected.</p>
     </div>
   </div>
 
   <div class="wbar ad2" onclick="openAndroidSec(2)">
     <div class="layer">
       <i class="fa-solid fa-up-right-from-square"></i>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, omnis?  </p>
+      <p>A dynamic wallpaper apk and admin panel connected firebase database</p>
     </div>
   </div>
 
@@ -328,15 +325,15 @@ color: #ffffff;
 <div class="work-box">
   <h3 class="work-heading">WEB APP DEVELOPMENT</h3>
   <div class="wbar wad1">
-    <div class="layer" onclick="openWebSec()">
-      <i class="fa-solid fa-up-right-from-square" ></i>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, omnis?  </p>
+    <div class="layer" >
+     <a href="https://himmatnyp019.github.io/startupFoundation/"> <i class="fa-solid fa-up-right-from-square" ></i></a>
+      <p>A dynamic educational website with backend connected.</p>
     </div>
   </div>
   <div class="wbar wad2">
-    <div class="layer " onclick="openWebSec()">
-      <i class="fa-solid fa-up-right-from-square"></i>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, omnis?  </p>
+    <div class="layer ">
+     <a href="https://himmatnyp019.github.io/OnlineBusiness/"> <i class="fa-solid fa-up-right-from-square"></i></a>
+      <p>A resposnive portfolio website</p>
     </div>
   </div>
   <div class="wbar" id="more"> <h3  onclick="openWebSec()">See more</h3></div>
@@ -495,72 +492,23 @@ measurementId: "G-4B6G92PXR3"
   });
 
 </script>
-   <script type="text/javascript">
+<script>
+  function getCurrentDateTime() {
+  const now = new Date();
+  const year = now.getFullYear();
+  const month = String(now.getMonth() + 1).padStart(2, '0'); // Adding 1 because January is 0
+  const day = String(now.getDate()).padStart(2, '0');
+  const hours = String(now.getHours()).padStart(2, '0');
+  const minutes = String(now.getMinutes()).padStart(2, '0');
+  const seconds = String(now.getSeconds()).padStart(2, '0');
 
-       const getCurrentTimeDate = () => {
-               const currentTimeDate = new Date();
-              
+  const formattedDateTime = `${year}${month}${day}-${hours}-${minutes}-${seconds}`;
+  return formattedDateTime;
+}
+const currentDateTime = getCurrentDateTime();
+document.getElementById("date").value = currentDateTime;
 
-               var weekday = new Array(7);
-               weekday[0] = "SUN";
-               weekday[1] = "MON";
-               weekday[2] = "TUE";
-               weekday[3] = "WED";
-               weekday[4] = "THU";
-               weekday[5] = "FRI";
-               weekday[6] = "SAT";
-       
-               var month = new Array();
-               month[0] = "JAN";
-               month[1] = "FEB";
-               month[2] = "MAR";
-               month[3] = "APR";
-               month[4] = "May";
-               month[5] = "JUN";
-               month[6] = "JUL";
-               month[7] = "AUG";
-               month[8] = "SEP";
-               month[9] = "OCT";
-               month[10] = "NOV";
-               month[11] = "DEC";
-       
-               var hours   =  currentTimeDate.getHours();
-       
-               var minutes =  currentTimeDate.getMinutes();
-               minutes = minutes < 10 ? '0'+minutes : minutes;
-       
-                var AMPM = hours >= 12 ? 'PM' : 'AM';
-       
-               if(hours === 12){
-                   hours=12;
-       
-               }else{
-       
-                   hours = hours%12;
-       
-               }
-       
-               var currentTime = `${hours}:${minutes}${AMPM}`;
-               var currentDay = weekday[currentTimeDate.getDay()];
-               var currentDate  = currentTimeDate.getDate();
-               var currentMonth = month[currentTimeDate.getMonth()];
-               var CurrentYear = currentTimeDate.getFullYear();
-       
-               var fullDate = `${currentDate}${currentMonth}${CurrentYear}`;
-              
-              var fullDateValue = currentTime + currentDay + fullDate;
-              document.getElementById("date").innerHTML = currentTime+currentDay+fullDate;
-           
-                document.getElementById("date").value = fullDateValue;
-                
-
-               setTimeout(getCurrentTimeDate, 1000);
-       
-           }
-           getCurrentTimeDate();
-       
-           </script>
-
+</script>
 <script>
   
 function openDesignSec() {
