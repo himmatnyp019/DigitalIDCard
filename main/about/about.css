@@ -1,10 +1,11 @@
 /* ----------------qanimation overall animation set-up for whole section------ */
-section .animate{
-    transition: 1s ;
+section .animate {
+    transition: 1s;
     filter: blur(7px);
     opacity: 0;
 }
-section.show-animation .animate{
+
+section.show-animation .animate {
     filter: blur(0);
     opacity: 1;
 }
@@ -12,25 +13,30 @@ section.show-animation .animate{
 
 
 /* ----------------quick looks on mywork------ */
-.quick{
+.quick {
     height: auto;
     background: transparent;
     padding: 20px 100px;
     margin: 20px 0;
 }
-.quick-contents{
+
+.quick-contents {
     width: 100%;
     height: auto;
 }
-.quick-contents .parent{
+
+.quick-contents .parent {
     height: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-   padding-top: 50px;
-  visibility: visible;
+    padding-top: 50px;
+    visibility: visible;
+    gap: 20px;
+    flex-wrap: wrap;
 }
-.parent .child{
+
+.parent .child {
     width: 20%;
     height: 200px;
     background: #202020;
@@ -45,31 +51,35 @@ section.show-animation .animate{
     transform: translateY(0px);
     transition: .4s all ease-in;
 
-  
+
 }
-.child i{
-   
+
+.child i {
+
     padding: 10px;
     border-radius: 50px;
     font-size: 40px;
     text-align: center;
 }
-.child h2{
+
+.child h2 {
     font-size: 1.5rem;
     margin: 10px;
     font-weight: 600;
     text-align: center;
 }
-.child h4{
+
+.child h4 {
     font-size: 1.2rem;
     margin: 5px;
     color: #a8a7a7;
     text-align: center;
 }
-.child:hover{
+
+.child:hover {
     background: #ff004f;
     border: 2px solid transparent;
-    transform:translateY(-20px);
+    transform: translateY(-20px);
 
 }
 
@@ -77,48 +87,54 @@ section.show-animation .animate{
 
 
 
-.aboutt{
+.aboutt {
     min-height: 100vh;
     padding: 20px 100px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#heading{
+
+#heading {
     font-size: 3rem;
     width: 100%;
     text-align: left;
 }
-.about-contents{
+
+.about-contents {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.aboutt .animate{
+
+.aboutt .animate {
     transform: translateX(20%);
 }
-.aboutt.show-animation .animate{
+
+.aboutt.show-animation .animate {
     transform: translateX(0);
 }
-.img{
+
+.img {
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     display: block;
-   position: relative;
+    position: relative;
 
 
-  }
-  
-.img img{
-    max-width: 350px;
-   border-radius: 20px;
 }
-.img::after{
+
+.img img {
+    max-width: 350px;
+    border-radius: 20px;
+}
+
+.img::after {
     content: "";
     height: 100%;
-   width: 90%;
+    width: 90%;
     display: table;
     background: #fff;
     position: absolute;
@@ -129,7 +145,8 @@ section.show-animation .animate{
     z-index: -2;
     box-shadow: 0 0px 50px 3px rgba(243, 242, 243, 0.137);
 }
-.txt{
+
+.txt {
     width: 50%;
     margin: 10px;
     background: #202020;
@@ -137,25 +154,29 @@ section.show-animation .animate{
     border-radius: 20px;
     position: relative;
     visibility: visible;
-   
-}
-.txt h4{
-    margin: 0 0 3px  10px ;
 
 }
-.txt h4 span{
+
+.txt h4 {
+    margin: 0 0 3px 10px;
+
+}
+
+.txt h4 span {
     font-size: 18px;
     font-weight: 500;
     color: aliceblue;
 }
-.txt #about-para{
+
+.txt #about-para {
     margin: 10px;
     font-size: 20px;
     line-height: 22px;
     text-align: left;
-   visibility: visible;
+    visibility: visible;
 }
-.txt .style{
+
+.txt .style {
     width: 200px;
     position: absolute;
     top: -50px;
@@ -166,7 +187,8 @@ section.show-animation .animate{
     z-index: -2;
     box-shadow: 0 0px 50px 3px rgba(243, 242, 243, 0.137);
 }
-.style2{
+
+.style2 {
     display: block;
     width: 200px;
     position: absolute;
@@ -192,25 +214,30 @@ section.show-animation .animate{
 
 
 /* ---------------eduction and skills-------------------- */
-.education{
+.education {
     min-height: 100vh;
     padding: 60px 100px;
     margin-top: 70px;
 }
-.education-contents{
+
+.education-contents {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
 }
-.education .animate{
+
+.education .animate {
     transform: translateX(-20%);
 }
-.education.show-animation .animate{
+
+.education.show-animation .animate {
     transform: translateX(0);
 }
-.skills-content, .edu-content{
+
+.skills-content,
+.edu-content {
     height: 420px;
     width: 100%;
     border-radius: 20px;
@@ -224,7 +251,7 @@ section.show-animation .animate{
 
 }
 
-.skills-content::before{
+.skills-content::before {
     content: "";
     display: table;
     height: 300px;
@@ -232,14 +259,14 @@ section.show-animation .animate{
     background: #2a2a2a;
     border-radius: 30px;
     position: absolute;
-   top: -30px;
-   left: -20px;
+    top: -30px;
+    left: -20px;
     z-index: -2;
     box-shadow: 0 0px 50px 3px rgba(243, 242, 243, 0.137);
 
 }
 
-.edu-content::after{
+.edu-content::after {
     content: "";
     display: table;
     height: 150px;
@@ -253,13 +280,16 @@ section.show-animation .animate{
     animation: alpha;
     box-shadow: 0 0px 50px 3px rgba(243, 242, 243, 0.137);
 }
-.skills-content h4, .edu-content h4{
+
+.skills-content h4,
+.edu-content h4 {
     width: 100%;
     margin: 10px 0 0 0;
     font-size: 1.7rem;
-  
+
 }
-.bar-container{
+
+.bar-container {
     width: 100%;
     height: 100%;
     display: flex;
@@ -267,47 +297,54 @@ section.show-animation .animate{
     justify-content: space-around;
     align-items: bottom;
 }
-.bar-container .bar{
- width: 100%;   
+
+.bar-container .bar {
+    width: 100%;
 }
-.bar h5{
+
+.bar h5 {
     margin: 10px 5px;
     font-size: 1.1rem;
 
 }
-.bar .back{
+
+.bar .back {
     background: #2a2a2a;
     border-radius: 20px;
     padding: 0;
-    margin:5px;
+    margin: 5px;
     width: 100%;
     height: 20px;
     overflow: hidden;
 }
-.bar .front{
+
+.bar .front {
     border-radius: 20px;
     margin: 0;
     height: 20px;
     background: #ff004f;
 }
 
-.wd{
-    width: 45%;
-}
-.ad{
-    width: 70%;
-
-}
-.dup{
+.wd {
     width: 80%;
 }
-.ct{
-    width: 50%;
+
+.ad {
+    width: 65%;
+
+}
+
+.dup {
+    width: 70%;
+}
+
+.ct {
+    width: 60%;
 }
 
 
 
-.name{
+.name {
     width: auto;
     display: flex;
     flex-direction: row;
@@ -316,12 +353,12 @@ section.show-animation .animate{
     background: #2a2a2a;
     border-radius: 20px;
     padding: 7px 20px;
-  margin-top: 40px;
-   position: relative;
-    
+    margin-top: 40px;
+    position: relative;
+
 }
 
-.name .grade{
+.name .grade {
     padding: 5px;
     background: #202020;
     border-radius: 50px;
@@ -329,19 +366,23 @@ section.show-animation .animate{
     width: 30px;
 
 }
-.name .title{
+
+.name .title {
     width: 100%;
 }
-.title h5{
+
+.title h5 {
     color: #fff;
     font-weight: 400;
 }
-.grade h4{
+
+.grade h4 {
     padding: 0;
     margin: 2px;
     font-size: 16px;
 }
-.name::before{
+
+.name::before {
     content: "2019/20";
     display: table;
     padding: 8px 30px;
@@ -356,13 +397,14 @@ section.show-animation .animate{
     position: absolute;
     top: -40px;
     left: 0px;
-   
+
 }
 
-.name:nth-child(2)::before{
+.name:nth-child(2)::before {
     content: "2020-2022/23";
 }
-.name:nth-child(1)::before{
+
+.name:nth-child(1)::before {
     content: "2023-Current";
 }
 
@@ -376,146 +418,168 @@ section.show-animation .animate{
 
 /* ----------small screen responsive design------------ */
 @media (max-width:960px) {
-    .quick{
-       padding: 10px;
+    .quick {
+        padding: 10px;
     }
-   .parent .child{
+
+    .parent .child {
         width: 40%;
         height: 130px;
         margin: 0 10px;
-       
+
     }
-    .parent .child h2{
+
+    .parent .child h2 {
         font-size: 16px;
         margin: 10px;
         font-weight: 500;
-        
+
     }
-    .child h4{
+
+    .child h4 {
         font-size: 18px;
         margin: 5px;
         color: #a8a7a7;
     }
-    .aboutt{
+
+    .aboutt {
         padding: 20px;
     }
-    .aboutt .about-contents{
-        flex-direction: column; 
-        gap: 90px;       
+
+    .aboutt .about-contents {
+        flex-direction: column;
+        gap: 90px;
     }
-    .txt{
-     width: 100%;
+
+    .txt {
+        width: 100%;
     }
 
 
 
 
     /* -------------education section----------- */
-    .education{
+    .education {
         padding: 30px 20px;
     }
-    .education-contents{
-      flex-direction: column;
+
+    .education-contents {
+        flex-direction: column;
     }
 
 }
+
 @media (max-width:350px) {
 
-    .aboutt{
+    .aboutt {
         padding: 5px;
         margin: 0;
         width: 100%;
     }
-    .aboutt .about-contents{
-        flex-direction: column; 
-        gap: 90px;       
+
+    .aboutt .about-contents {
+        flex-direction: column;
+        gap: 90px;
     }
-    .txt{
-     width: 100%;
+
+    .txt {
+        width: 100%;
     }
-   .about-contents .img img{
-    
+
+    .about-contents .img img {
+
         max-width: 80%;
-       border-radius: 20px;
-    
-   }
+        border-radius: 20px;
+
+    }
 
 
 
     /* -------------education section----------- */
-    .education{
+    .education {
         padding: 30px 5px;
     }
-    .education-contents{
-      flex-direction: column;
+
+    .education-contents {
+        flex-direction: column;
     }
-    
-.skills-content::before{
-   top: -10px;
-   left: -10px;
-}
+
+    .skills-content::before {
+        top: -10px;
+        left: -10px;
+    }
 }
 
 
 @media (max-width:450px) {
 
-    .aboutt{
+    .aboutt {
         padding: 10px;
     }
-    .aboutt .about-contents{
-        flex-direction: column; 
-        gap: 90px;       
+
+    .aboutt .about-contents {
+        flex-direction: column;
+        gap: 90px;
     }
-    .txt{
-     width: 100%;
+
+    .txt {
+        width: 100%;
     }
-    .txt #about-para{
-        font-size:16px ;
+
+    .txt #about-para {
+        font-size: 16px;
     }
-   .txt .style{
+
+    .txt .style {
         top: -10px;
         left: -10px;
         border-radius: 20px;
     }
-    .style2{
+
+    .style2 {
         border-radius: 20px;
         bottom: -10px;
         right: -10px;
     }
-    .about-contents .img{
-     display: flex;
-     justify-content: center;
-     align-items: center;
+
+    .about-contents .img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .about-contents .img img{
-    
+
+    .about-contents .img img {
+
         max-width: 80%;
-       border-radius: 20px;
-    
-   }
-   .about-contents .img::after{
-    content: "";
-   width: 80%;
-    display: table;
-    background: #fff;
-    position: absolute;
-    top: 0;
-    left: 20px;
-    transform: rotate(-4deg);
-}
+        border-radius: 20px;
+
+    }
+
+    .about-contents .img::after {
+        content: "";
+        width: 80%;
+        display: table;
+        background: #fff;
+        position: absolute;
+        top: 0;
+        left: 20px;
+        transform: rotate(-4deg);
+    }
 
 
 
 
     /* -------------education section----------- */
-    .education{
+    .education {
         padding: 30px 10px;
     }
-    .education-contents{
-      flex-direction: column;
+
+    .education-contents {
+        flex-direction: column;
     }
-    .edu-content::after{
-       
+
+    .edu-content::after {
+
         bottom: -10px;
         right: -10px;
     }
@@ -523,60 +587,68 @@ section.show-animation .animate{
 }
 
 @media (max-width:550px) {
-    .quick{
+    .quick {
         padding: 0px;
-     }
-    .parent .child{
-         width: 30%;
-         max-height: 130px;
-         margin: 0 ;
-        
-     }
-     .parent .child i{
-       
+    }
+
+    .parent .child {
+        width: 30%;
+        max-height: 130px;
+        margin: 0;
+
+    }
+
+    .parent .child i {
+
         font-size: 24px;
-     }
-     .parent .child h2{
-         font-size: 14px;
-         margin: 5px;
-         font-weight: 500;
-         
-     }
-     .child h4{
-         font-size: 16px;
-         margin: 5px;
-         color: #a8a7a7;
-     }
-    
+    }
+
+    .parent .child h2 {
+        font-size: 14px;
+        margin: 5px;
+        font-weight: 500;
+
+    }
+
+    .child h4 {
+        font-size: 16px;
+        margin: 5px;
+        color: #a8a7a7;
+    }
+
 }
+
 @media (max-width:300px) {
-    .quick{
+    .quick {
         padding: 0px;
-     }
-    .parent .child{
-         width: 30%;
-         max-height: 130px;
-         margin: 0 ;
-        
-     }
-     .parent .child i{
+    }
+
+    .parent .child {
+        width: 30%;
+        max-height: 130px;
+        margin: 0;
+
+    }
+
+    .parent .child i {
         border: 2px solid #fff;
         font-size: 14px;
         padding: 18px;
-     }
-     .parent .child h2{
-         font-size: 14px;
-         margin: 10px;
-         font-weight: 300;
-         display: none;
-         
-     }
-     .child h4{
-         font-size: 14px;
-         font-weight: 300;
-         margin: 5px;
-         color: #a8a7a7;
-     }
-    
-}
+    }
 
+    .parent .child h2 {
+        font-size: 14px;
+        margin: 10px;
+        font-weight: 300;
+        display: none;
+
+    }
+
+    .child h4 {
+        font-size: 14px;
+        font-weight: 300;
+        margin: 5px;
+        color: #a8a7a7;
+    }
+
+}
