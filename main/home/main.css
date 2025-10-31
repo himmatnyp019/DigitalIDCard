@@ -601,8 +601,9 @@ nav ul li i{
 	width: 100%;
 	min-height: 40%;
 	border-radius: 20px;
-	
-	
+}
+.wbar-btn{
+	height: 40px;
 }
 
 .ad1{
